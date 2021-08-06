@@ -1,0 +1,1 @@
+(()=>{"use strict";let t=new class{numId;nombre;constructor(t,e){this.numId=t,this.nombre=e}get getNumId(){return this.numId}set setNumId(t){this.numId=t}};t.setNumId="Keiler",console.log(t.getNumId)})();
