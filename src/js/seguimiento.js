@@ -1,4 +1,6 @@
-export class Seguimiento extends Servicios {
+import { Servicios } from './servicios.js';
+
+class Seguimiento extends Servicios {
     numId;
     nombre;
     constructor(numId, nombre) {

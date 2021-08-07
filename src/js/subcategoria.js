@@ -1,4 +1,6 @@
-export class SubCategoria extends Categoria {
+import { Categoria } from './categoria.js';
+
+class SubCategoria extends Categoria {
     id;
     nombre;
     constructor(id, nombre) {

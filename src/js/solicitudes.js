@@ -1,4 +1,6 @@
-export class Solicitudes extends Ticket {
+import { Ticket } from './ticket.js';
+
+class Solicitudes extends Ticket {
     id;
     estado;
     descripcion;

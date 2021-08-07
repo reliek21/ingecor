@@ -1,4 +1,6 @@
-export class Registros extends Servicios {
+import { Servicios } from './servicios.js';
+
+class Registros extends Servicios {
     codigoReporte;
     constructor(codigoReporte) {
         this.codigoReporte = codigoReporte;

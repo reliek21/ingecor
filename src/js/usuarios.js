@@ -1,17 +1,21 @@
-export class Usuarios extends Personas {
-    user;
+import { Personas } from './personas.js';
+
+class Usuarios extends Personas {
+    usuario;
     clave;
     empresa;
-    constructor(user, clave, empresa) {
-
+    constructor(usuario, clave, empresa) {
+        this.usuario = usuario;
+        this.clave = clave;
+        this.empresa = empresa;
     }
 
-    get getUser() {
-        return user;
+    get getUsario() {
+        return usuario;
     }
 
-    set setUser(newUser) {
-        this.user = newUser;
+    set setUsario(newUsuario) {
+        this.usuario = newUsuario;
     }
 
     get getClave() {

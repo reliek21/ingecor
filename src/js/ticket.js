@@ -1,3 +1,5 @@
+import { Servicios } from './servicios.js';
+
 export class Ticket extends Servicios {
     codigo;
     tipoTicket;

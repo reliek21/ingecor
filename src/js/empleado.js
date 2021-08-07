@@ -1,4 +1,6 @@
-export class Empleado extends Personas {
+import { Personas } from "./personas.js";
+
+class Empleado extends Personas {
     cargo;
     constructor(cargo) {
         this.cargo = cargo;
