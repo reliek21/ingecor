@@ -1,6 +1,6 @@
-import { Servicios } from './servicios.js';
+import { Solicitudes } from './solicitudes.js';
 
-class Registros extends Servicios {
+class Registros extends Solicitudes {
     codigoReporte;
     constructor(codigoReporte) {
         this.codigoReporte = codigoReporte;

@@ -13,4 +13,12 @@ export class Servicios {
     set setNumId(newNumId) {
         this.numId = newNumId;
     }
+
+    get getNombre() {
+        return this.nombre;
+    }
+
+    set setNombre(newNombre) {
+        this.nombre = newNombre;
+    }
 }
