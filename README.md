@@ -84,7 +84,7 @@ To run tests, run the following command
 ## Autores
 
 - [Keiler Guardo](https://www.github.com/reliek)
-- [Camilo Martinez](https://www.github.com/octokatherine)
+- [Camilo Martinez](https://www.github.com/Camo2021)
 - [Luis Blanco](https://www.github.com/octokatherine)
 - [Luis Hernandez](https://www.github.com/octokatherine)
   
