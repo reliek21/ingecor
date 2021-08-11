@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio Sesion</title>
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap-->
     <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos del login -->
     <link rel="stylesheet" href="/public/css/views/login.css">
-
-    <link href="signin.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/assets/favicon.png" type="image/x-icon">
 </head>
 
 <body class="text-center">
@@ -17,15 +17,22 @@
     <main class="form-signin">
         <form>
             <img class="mb-4" src="/public/assets/logo.png" alt="" width="300" height="200">
-            <h1 class="h3 mb-3 fw-normal">Por favor acceda</h1>
+            <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput">
                 <label for="floatingInput">Correo</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword">
                 <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <div class="form-floating">
+                <p class="btn-r-l">
+                    ¿No tienes una cuenta?
+                    <a href="#">Registrate</a>
+                </p>
             </div>
 
             <div class="checkbox mb-3">
