@@ -3,6 +3,7 @@
     --color-primario: #ff1057;
     --color-secundario: #FBF4F7;
     --color-accent: #CC0055;
+    --color-btn-alternativo: #F68B1F;
 }
 
 
@@ -88,4 +89,33 @@ body {
 }
 
 /* btn - empleados */
+.box-centered {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
 
+.btn-empleado a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--color-btn-alternativo);
+}
+
+.btn-empleado a:hover {
+    background-color: rgb(173, 101, 29)
+}
+
+.btn-usuario a {
+    background-color: var(--color-primario);
+}
+
+.btn-usuario a:hover {
+    background-color: var(--color-accent);
+}
+
+.btn-empleado-login {
+    background-color: var(--color-btn-alternativo);
+}
