@@ -65,11 +65,6 @@ body {
 
 
 /* Estilos login - perzonalizados */
-/* forms */
-.form-control,
-input[type="email"]:focus {
-    outline: var(--color-primario) !important;
-}
 
 /* btn */
 .form-floating .btn-r-l a {
@@ -91,3 +86,6 @@ input[type="email"]:focus {
 .btn-primary:hover {
     background-color: var(--color-accent);
 }
+
+/* btn - empleados */
+
