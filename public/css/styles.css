@@ -11,7 +11,7 @@ body {
 }
 
 .form-floating .btn-r-l a {
-  color: #CC0055;
+  color: rgba(235, 34, 37, 0.7);
   text-decoration: none;
 }
 .form-floating .btn-r-l a:hover {
@@ -19,11 +19,11 @@ body {
 }
 
 .btn-primary {
-  background-color: #ff1057;
-  border: #ff1057;
+  background-color: #EB2227;
+  border: #EB2227;
 }
 .btn-primary:hover {
-  background-color: #CC0055;
+  background-color: rgba(235, 34, 37, 0.7);
 }
 
 .box-centered {
@@ -45,10 +45,10 @@ body {
 }
 
 .btn-usuario a {
-  background-color: #ff1057;
+  background-color: #EB2227;
 }
 .btn-usuario a:hover {
-  background-color: #CC0055;
+  background-color: rgba(235, 34, 37, 0.7);
 }
 
 .btn-empleado-login {
