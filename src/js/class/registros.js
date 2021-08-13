@@ -1,4 +1,4 @@
-import { Solicitudes } from './solicitudes.js';
+import { Solicitudes } from '../solicitudes.js';
 
 class Registros extends Solicitudes {
     codigoReporte;
