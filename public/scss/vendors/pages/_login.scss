@@ -27,11 +27,19 @@ body {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $accent-color;
+        }
     }
     input[type="password"] {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $accent-color;
+        }
     }
     .bd-placeholder-img {
         font-size: 1.125rem;
@@ -40,7 +48,7 @@ body {
         -moz-user-select: none;
         user-select: none;
     }
-    
+
     @media (min-width: 768px) {
         .bd-placeholder-img-lg {
             font-size: 3.5rem;
