@@ -1,13 +1,21 @@
-import { Servicios } from "./js/servicios.js";
+const express = require('express');
+const path = require('path');
+const app = express();
 
-// Servicios
-const id = [0,1,2,3];
-const listaServicios = ['Administrativo', 'Educativo', 'Operacional', 'comercial'];
 
-let servicios1 = new Servicios();
-servicios1.setNumId = id;
-servicios1.setNombre = listaServicios;
-console.log(`Id de los servicios: ${servicios1.getNumId}`);
-console.log(`Nuestros servicios: ${servicios1.getNombre}`);
-console.log('Seleccionamos un servicio: 2');
-console.log(`Codigo: ${servicios1.getNumId[2]}, Servicio: ${servicios1.getNombre[2]}`);
+// setting
+app.set('port', 8080);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+// middlewares
+
+// routes
+app.use(require('./routes/routes'));
+
+// static files
+
+// escuchando el servidor
+app.listen(app.get('port'), () => {
+    console.log("Servidor en el puerto", app.get('port'));
+});
