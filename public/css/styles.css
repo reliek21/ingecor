@@ -7,7 +7,12 @@ html {
 }
 
 body {
+  align-items: flex-start !important;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
 }
 
 .form-floating .btn-r-l a {
@@ -85,10 +90,18 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+.form-signin input[type=email]:focus {
+  box-shadow: none;
+  border: 1px solid rgba(235, 34, 37, 0.7);
+}
 .form-signin input[type=password] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.form-signin input[type=password]:focus {
+  box-shadow: none;
+  border: 1px solid rgba(235, 34, 37, 0.7);
 }
 .form-signin .bd-placeholder-img {
   font-size: 1.125rem;
@@ -101,6 +114,10 @@ body {
   .form-signin .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+body {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

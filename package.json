@@ -4,10 +4,17 @@
   "description": "University Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src",
+    "dev": "nodemon"
   },
   "author": "Keiler Guardo, Camilo Martinez, Luis Blanco, Luis Hernandez",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
