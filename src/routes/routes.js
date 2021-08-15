@@ -3,11 +3,41 @@ const router = express.Router();
 
 // routes
 router.get('/', (req, res) => {
-    res.render('index', {title: 'First Website'});
+    res.render('login', {
+        title: 'Login'
+    });
 });
 
-router.get('/contact', (req, res) => {
-    res.render('contact', {title: 'First Website'});
+router.get('/loginadmin', (req, res) => {
+    res.render('login2', {
+        title: 'Login Admin',
+    });
 });
 
-module.exports = router; 
+router.get('/registro', (req, res) => {
+    res.render('signup', {
+        title: 'Registro',
+    });
+});
+
+router.get('/usuario', (req, res) => {
+    res.render('home', {
+        title: 'Home'
+    });
+});
+
+router.get('/admin', (req, res) => {
+    res.render('home2', {
+        title: 'Home Admin'
+    });
+});
+
+
+// 404 Page
+router.get('*', (req, res) => {
+    res.render('error', {
+        title: '404 Error'
+    });
+});
+
+module.exports = router;
