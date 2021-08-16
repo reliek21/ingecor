@@ -1,3 +1,6 @@
+// TODO: Configurar todo lo de este archivo
+// TODO: Cambiar el nombre de este archivo a app.js
+
 require('dotenv').config();
 
 const express = require('express');
