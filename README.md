@@ -1,5 +1,7 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+<div style="">
+    <img src="public/assets/logo/logo.png" style="zoom: 80%;" alt="Logo"/>
+</div>
 
     
 # Ingecor Services
@@ -13,63 +15,72 @@ Plataforma web que tiene como objetivo ofrecer soporte a los sistemas de informa
 
 ## Capturas de pantalla
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](public/assets/screen/screenshot.png)
 
-  ## Referencia de colores
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+## Referencia de colores
+
+| Color             | Hex                                                                                              |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| Color primario    | ![#EB2227](https://via.placeholder.com/10/0a192f?text=+) #EB2227                                 |
+| Color Secundario  | ![#FBF4F7](https://via.placeholder.com/10/f8f8f8?text=+) #FBF4F7                                 |
+| Accent Color      | ![rgba(235, 34, 37, 0.70)](https://via.placeholder.com/10/00b48a?text=+) rgba(235, 34, 37, 0.70) |
+| Color alternativo | ![#F68B1F](https://via.placeholder.com/10/00b48a?text=+) #F68B1F                                 |
 
 
 ## Carcteristicas
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- UX & UI
+- Live Previews
+- Pantalla completa
+- Servidor
+- Autenticacion de usuarios
+- Conexión de servicios
 
   
 ## Tecnologias
 
-**Client:** React, Redux, TailwindCSS
+**Cliente:** Hbs, Html, Scss, Css, JavaScript
 
-**Server:** Node, Express
+**Servidor:** Node, Express
+
+**Real Time** Socket.io
 
   
 ## Ejecutar Local
 
-Clone the project
+Clonar el proyecto
 
 ```bash
   git clone https://link-to-project
 ```
 
-Go to the project directory
+Ir al directorio del proyecto
 
 ```bash
   cd my-project
 ```
 
-Install dependencies
+Instalar las dependencias
 
 ```bash
   npm install
 ```
 
-Start the server
+Iniciar el servidor
 
 ```bash
   npm run start
 ```
+o
 
+```bash
+    npm run dev
+```
   
 ## Correr Test
 
-To run tests, run the following command
+Correr los Test, siguiento el comando
 
 ```bash
   npm run test
@@ -86,5 +97,5 @@ To run tests, run the following command
 - [Keiler Guardo](https://www.github.com/reliek)
 - [Camilo Martinez](https://www.github.com/Camo2021)
 - [Luis Blanco](https://www.github.com/fer603)
-- [Luis Hernandez](https://www.github.com/octokatherine)
+- [Luis Hernandez](https://www.github.com/luishernandez)
   
