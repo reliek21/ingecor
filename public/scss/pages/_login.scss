@@ -25,15 +25,17 @@
     top: 1rem;
 }
 
-.btn-empleado a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background-color: $alternative-color;
-    &:hover {
-        background-color: rgb(173, 101, 29);
+.btn-empleado {
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        background-color: $alternative-color;
+        &:hover {
+            background-color: rgb(173, 101, 29);
+        }
     }
 }
 

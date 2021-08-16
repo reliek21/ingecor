@@ -3,6 +3,12 @@ const router = express.Router();
 
 // routes
 router.get('/', (req, res) => {
+    res.render('home', {
+        title: 'Home'
+    });
+});
+
+router.get('/login', (req, res) => {
     res.render('login', {
         title: 'Login'
     });
@@ -21,14 +27,14 @@ router.get('/registro', (req, res) => {
 });
 
 router.get('/usuario', (req, res) => {
-    res.render('home', {
-        title: 'Home'
+    res.render('usuario', {
+        title: 'Home usuario'
     });
 });
 
 router.get('/admin', (req, res) => {
-    res.render('home2', {
-        title: 'Home Admin'
+    res.render('admin', {
+        title: 'Home admin'
     });
 });
 
