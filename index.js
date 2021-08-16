@@ -1,12 +1,12 @@
 const express = require('express');
 const hbs = require('hbs');
 
+// Variables de entorno
+require('dotenv').config();
+
 const app = express();
-const port = 8080;
 
-const router = require('./src/routes/routes');
-
-
+const router = require('./routes/routes');
 
 // handlebars
 app.set('view engine', 'hbs');
@@ -18,6 +18,7 @@ app.use(express.static('public'));
 // routes
 app.use(router);
 
-app.listen(port, () => {
-    console.log(`Servidor en el puerto: ${port}`)
+// server
+app.listen(process.env.PORT, () => {
+    console.log(`Servidor en el puerto: ${process.env.PORT}`)
 });
