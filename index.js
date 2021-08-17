@@ -1,5 +1,12 @@
+// TODO: Configurar todo lo de este archivo
+// TODO: Cambiar el nombre de este archivo a app.js
+
+require('dotenv').config();
+
 const express = require('express');
 const hbs = require('hbs');
+
+require('./server/database');
 
 // Variables de entorno
 require('dotenv').config();
