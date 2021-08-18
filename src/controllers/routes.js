@@ -32,7 +32,7 @@ indexCtrl.renderUsuario = (req, res) => {
 
 indexCtrl.renderAdmin = (req, res) => {
     res.render('users/admin', {
-        title: 'Home Admin'
+        title: 'Home Admin',
     });
 };
 

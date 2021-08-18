@@ -19,8 +19,6 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-console.log(path.join(app.get('views'), '/partials'));
-
 // middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
