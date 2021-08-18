@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+// TODO: Cambiar todas las rutas a index controller
+
 // routes
 router.get('/', (req, res) => {
     res.render('home', {
