@@ -1,13 +1,8 @@
 const { Schema, model } = require('mongoose');
 const bcryp = require('bcryptjs');
 
-<<<<<<< HEAD
 const UsuarioSchema = new Schema({
     nombre: {
-=======
-const UserSchema = new Schema({
-    name: {
->>>>>>> dev-back
         type: String,
         require: true
     },
