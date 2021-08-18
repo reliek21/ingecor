@@ -1,6 +1,122 @@
-<h1>Navigation</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit reiciendis, ipsa architecto tenetur esse odit ut
-    quisquam fugit cumque eveniet at, vero laborum sed dolor voluptatum, vel aliquam nihil repudiandae?</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Estilos del login -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/x-icon">
+    <title>{{{title}}}</title>
+</head>
 
-<h1>Footer</h1>
+<body>
+
+    <div class="container">
+
+        {{!-- Header --}}
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="assets/logo/favicon.png" alt="logo" width="40">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="#nosotros" class="nav-link px-2 link-dark">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link px-2 link-dark">Servicios</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="/login" class="btn btn-outline-secondary me-2">Login</a>
+                <a href="/registro" class="btn btn-primary">Registrate</a>
+            </div>
+        </header>
+
+
+        {{!-- Hero --}}
+        <div class="container col-xxl-11 px-4 py-5" id="nosotros">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="assets/images/bootstrap.png" class="d-block mx-lg-auto img-fluid" alt="Image" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Sistemas de información a tu medida</h1>
+                    <p class="lead">Ingecor tiene los mejores sistemas de información hechos a la medida en toda
+                        cordoba, con años en el campo hemos mejorado la experiencia de usuario con cada sistema de
+                        información entregado, con el unico objetivo que nuestros clientes tengan un sistema de
+                        informacion hecho a la medida para que su negocio prospere.</p>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Feature --}}
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom" id="servicios">Nuestros servicios</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon bg-danger bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#collection" />
+                        </svg>
+                    </div>
+                    <h2>Diseño</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon bg-danger bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#people-circle" />
+                        </svg>
+                    </div>
+                    <h2>Experiencia de usuario</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon bg-danger bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#toggles2" />
+                        </svg>
+                    </div>
+                    <h2>Desarrollo y despliegue</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Footer --}}
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">&copy; 2021 Ingecor Services, Inc</p>
+
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <img src="assets/logo/favicon.png" alt="logo" width="40">
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
+                </ul>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

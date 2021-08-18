@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Estilos del login -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/x-icon">
+    <title>{{{title}}}</title>
+</head>
+
+<body class="text-center">
+
+    <div class="box-centered">
+        <div class="btn-empleado">
+            <a href="/loginadmin">Empleados</a>
+        </div>
+    </div>
+
+    <main class="form-signin">
+
+        <form>
+            <img class="mb-4" src="assets/logo/favicon.png" alt="" width="100" height="100">
+            <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput">
+                <label for="floatingInput">Correo</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <div class="form-floating">
+                <p class="btn-r-l">
+                    ¿No tienes una cuenta?
+                    <a href="/registro">Registrate</a>
+                </p>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Todos los derechos reservados</p>
+        </form>
+    </main>
+</body>
+
+</html>

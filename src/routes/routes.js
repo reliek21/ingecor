@@ -4,5 +4,6 @@ const router = Router();
 
 
 router.get('/', indexCtrl.renderIndex);
+router.get('/login', indexCtrl.renderLogin);
 
 module.exports = router;
