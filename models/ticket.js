@@ -1,11 +1,11 @@
 const { Schema, model } = require('mongoose');
 
 const TicketSchema = new Schema({
-    titulo: {
+    title: {
         type: String,
         require: true
     },
-    descripcion: {
+    description: {
         type: String,
         require: true
     },
