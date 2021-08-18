@@ -4,10 +4,10 @@ const ticketRouter = Router();
 const ticketCtrl = require('../controllers/ticket');
 
 // new ticket
-ticketRouter.get('/ticket/add', ticketCtrl.renderTicket);
-ticketRouter.post('/ticket/add', ticketCtrl.createNewTicket);
+ticketRouter.get('/add', ticketCtrl.renderTicket);
+ticketRouter.post('/add', ticketCtrl.createNewTicket);
 
 // get tickets
-ticketRouter .get('/ticket', ticketCtrl.renderTickets);
+ticketRouter.get('/tickets', ticketCtrl.renderTickets);
 
 module.exports = ticketRouter;

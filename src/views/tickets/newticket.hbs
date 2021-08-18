@@ -1,22 +1,43 @@
-<div class="col-md-4 mx-auto">
-    <div class="card text-center">
-        <div class="card-header">
-            <h3>Nuevo Ticket</h3>
-        </div>
-        <div class="card-body">
-            <form action="/ticket/add" method="post">
-                <div class="form-group">
-                    <input type="text" name="title" id="title" placeholder="Titulo" class="form-control" autofocus>
-                </div>
-                <div class="form-group">
-                    <textarea name="description" id="description" placeholder="Descripción" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary btn-block">
-                        Guardar
-                    </button>
-                </div>
-            </form>
+<div class="container ">
+    <div class="col-md-4 mx-auto">
+        <div class="card text-center">
+            <div class="card-header">
+                <h3>Nuevo Ticket</h3>
+            </div>
+            <div class="card-body">
+                <form action="/add" method="post">
+                    <div class="form-group">
+                        <input type="text" name="type" placeholder="Tipo de problema" class="form-control" autofocus>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <textarea name="description" placeholder="Descripción"
+                            class="form-control"></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="state" placeholder="Estado" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="personal" placeholder="Personal encargado" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="area" placeholder="Area" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre del Software" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block">
+                            Guardar
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
