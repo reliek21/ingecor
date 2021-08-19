@@ -63,7 +63,9 @@ userCtrl.registro = async (req, res) => {
                 email: email,
                 password: password
             });
+            newUser.password = await newUser.encryptPassword(password);
             await newUser.save();
+            req.flash('success_msg', 'Ya estas registrado');
             res.redirect('/login');
         }
     }
