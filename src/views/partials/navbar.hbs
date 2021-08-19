@@ -15,15 +15,15 @@
             </form>
 
             <div class="dropdown">
-                <button onclick="myFunction()" class="btn btn-primary dropdown-toggle dropbtn" type="button"
-                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Keiler
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Keiler Guardo
                 </button>
-                <div class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton" id="myDropdown">
-                    <a class="dropdown-item" href="#">Mis Tickets</a>
-                    <a class="dropdown-item" href="#">Perfil</a>
-                    <a class="dropdown-item" href="#">Salir</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="/add">Nuevo ticket</a></li>
+                    <li><a class="dropdown-item" href="/tickets">Todos los tickets</a></li>
+                    <li><a class="dropdown-item" href="#">Salir</a></li>
+                </ul>
             </div>
         </nav>
     </div>
