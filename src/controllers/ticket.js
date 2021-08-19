@@ -13,17 +13,17 @@ ticketCtrl.createNewTicket = async (req, res) => {
         type,
         description,
         status,
-        personal,
         area,
-        name
+        name,
+        date
     } = req.body;
     const newTicket = new Ticket({
         type: type,
         description: description,
         status: status,
-        personal: personal,
         area: area,
-        name: name
+        name: name,
+        date: date
     });
     await newTicket.save();
     res.redirect('/tickets');
@@ -33,7 +33,7 @@ ticketCtrl.renderTickets = async (req, res) => {
     const tickets = await Ticket.find().lean();
     res.render('tickets/alltickets', {
         title: 'Tickets',
-        tickets
+        tickets,
     });
 };
 
@@ -50,17 +50,17 @@ ticketCtrl.renderUpdateTicket = async (req, res) => {
         type,
         description,
         status,
-        personal,
         area,
-        name
+        name,
+        date
     } = req.body;
     await Ticket.findByIdAndUpdate(req.params.id, {
         type: type,
         description: description,
         status: status,
-        personal: personal,
         area: area,
-        name: name
+        name: name,
+        date: date
     });
     res.redirect('/tickets');
 };

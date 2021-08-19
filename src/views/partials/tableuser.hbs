@@ -3,13 +3,12 @@
         <caption>Pendientes</caption>
         <thead>
             <tr class="table-dark">
-                <th scope="col">Id #</th>
-                <th scope="col">Tipo</th>
+                <th scope="col">Asignación</th>
+                <th scope="col">Tipo de ticket</th>
                 <th scope="col">Descripción</th>
                 <th scope="col">Fecha de creación</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Personal encargado</th>
-                <th scope="col">Area</th>
+                <th scope="col">Tipo de Software</th>
                 <th scope="col">Nombre del Software</th>
             </tr>
         </thead>
@@ -17,12 +16,11 @@
 
             {{#each tickets}}
             <tr>
-                <td><a href="/edit/{{_id}}">{{_id}}</a></td>
+                <td><a href="/edit/{{_id}}" class="btn btn-warning text-white">Asignar</a></td>
                 <td>{{type}}</td>
                 <td>{{description}}</td>
-                <td>{{createdAt}}</td>
+                <td>{{date}}</td>
                 <td class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> {{status}}</td>
-                <td>{{personal}}</td>
                 <td>{{area}}</td>
                 <td>{{name}}</td>
             </tr>

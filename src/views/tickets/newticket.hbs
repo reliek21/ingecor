@@ -7,33 +7,39 @@
             <div class="card-body">
                 <form action="/add" method="post">
                     <div class="form-group">
-                        <input type="text" name="type" placeholder="Tipo de problema" class="form-control" autofocus>
+                        <select class="form-select" aria-label="Default select example" name="type">
+                            <option value="Insidencia" hidden>Tipo de ticket</option>
+                            <option value="Insidencia">Insidencia</option>
+                            <option value="Solicitud">Solicitud</option>
+                        </select>
                     </div>
                     <br>
                     <div class="form-group">
-                        <textarea name="description" placeholder="Descripción"
-                            class="form-control"></textarea>
+                        <textarea name="description" placeholder="Descripción" class="form-control" required></textarea>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="status" placeholder="Estado" class="form-control">
+                        <input type="text" name="status" class="form-control" value="Asignado" readonly>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="personal" placeholder="Personal encargado" class="form-control">
+                        <select class="form-select" aria-label="Default select example" name="area">
+                            <option value="Educativo" hidden>Tipo de Software</option>
+                            <option value="Educativo">Educativo</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Contable">Contable</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Libre">Libre</option>
+                        </select>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="area" placeholder="Area" class="form-control">
+                        <input type="text" name="name" placeholder="Nombre del Software" class="form-control" required>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Nombre del Software" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <button class="btn btn-primary btn-block">
-                            Guardar
+                        <button class="btn btn-success btn-block">
+                            Enviar Ticket
                         </button>
                     </div>
                 </form>

@@ -2,35 +2,47 @@
     <div class="card">
         <div class="card-header">
             <h3>Asignación</h3>
+            <p class="text-success">#{{ticket._id}}</p>
         </div>
         <div class="card-body">
             <form action="/edit/{{ticket._id}}?_method=PUT" method="post">
                 <input type="hidden" name="_method" value="PUT">
                 <div class="form-group">
                     <div class="form-group">
-                        <input type="text" name="type" value="{{ticket.type}}" class="form-control" autofocus>
+                        <select class="form-select" aria-label="Default select example" name="type">
+                            <option hidden>{{ticket.type}}</option>
+                            <option value="Insidencia">Insidencia</option>
+                            <option value="Solicitud">Solicitud</option>
+                        </select>
                     </div>
                     <br>
                     <div class="form-group">
-                        <textarea name="description" class="form-control">
-                            {{ticket.description}}
-                        </textarea>
+                        <textarea name="description" class="form-control" readonly>{{ticket.description}}</textarea>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="status" value="{{ticket.status}}" class="form-control">
+                        <select class="form-select" aria-label="Default select example" name="status">
+                            <option hidden>{{ticket.status}}</option>
+                            <option value="Asignado">Asignado</option>
+                            <option value="En proceso">En proceso</option>
+                            <option value="Resuelto">Resuelto</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example" name="area">
+                            <option hidden>{{ticket.area}}</option>
+                            <option value="Educativo">Educativo</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Contable">Contable</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Libre">Libre</option>
+                        </select>
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="personal" value="{{ticket.personal}}" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="text" name="area" value="{{ticket.area}}" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="text" name="name" value="{{ticket.name}}" class="form-control">
+                        <input type="text" name="name" value="{{ticket.name}}" class="form-control" readonly>
                     </div>
                     <br>
                     <div class="form-group">

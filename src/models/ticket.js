@@ -14,10 +14,6 @@ const TicketSchema = new Schema({
         default: 'Asignado',
         require: true
     },
-    personal: {
-        type: String,
-        require: true,
-    },
     area: {
         type: String,
         require: true,
@@ -25,9 +21,12 @@ const TicketSchema = new Schema({
     name: {
         type: String,
         require: false
+    },
+    date: {
+        type: Date,
+        require: true,
     }
-}, {
-    timestamps: true
 });
+
 
 module.exports = model('Ticket', TicketSchema);
