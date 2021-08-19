@@ -2,14 +2,15 @@
     <div class="card">
         <div class="card-header">
             <h3>Asignación</h3>
-            <p class="text-success">#{{ticket._id}}</p>
+            <p class="text-success"><strong>Nombre</strong>: {{ticket.name}}</p>
+            <p class="text-success"><strong>#</strong>{{ticket._id}}</p>
         </div>
         <div class="card-body">
             <form action="/edit/{{ticket._id}}?_method=PUT" method="post">
                 <input type="hidden" name="_method" value="PUT">
                 <div class="form-group">
                     <div class="form-group">
-                        <select class="form-select" aria-label="Default select example" name="type" disabled>
+                        <select class="form-select" aria-label="Default select example" name="type">
                             <option hidden>{{ticket.type}}</option>
                             <option value="Insidencia">Insidencia</option>
                             <option value="Solicitud">Solicitud</option>
@@ -31,8 +32,8 @@
 
                     <br>
                     <div class="form-group">
-                        <select class="form-select" aria-label="Default select example" name="area" disabled>
-                            <option hidden>{{ticket.area}}</option>
+                        <select class="form-select" aria-label="Default select example" name="area">
+                            <option value="{{ticket.area}}">{{ticket.area}}</option>
                             <option value="Educativo">Educativo</option>
                             <option value="Comercial">Comercial</option>
                             <option value="Contable">Contable</option>

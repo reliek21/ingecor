@@ -26,6 +26,7 @@ ticketCtrl.createNewTicket = async (req, res) => {
         date: date
     });
     await newTicket.save();
+    req.flash('success_msg', 'Ticket agregado con exito!');
     res.redirect('/usuario');
 };
 
@@ -62,7 +63,8 @@ ticketCtrl.renderUpdateTicket = async (req, res) => {
         name: name,
         date: date
     });
-    res.redirect('/tickets');
+    req.flash('success_msg', 'Ticket editado con exito!');
+    res.redirect('/admin');
 };
 
 module.exports = ticketCtrl;
