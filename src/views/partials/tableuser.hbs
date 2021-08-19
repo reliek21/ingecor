@@ -17,15 +17,14 @@
 
             {{#each tickets}}
             <tr>
-                <td>{{this._id}}</td>
-                <td>{{this.type}}</td>
-                <td>{{this.description}}</td>
-                <td>{{this.createdAt}}</td>
-                <td>{{this.state}}</td>
-                <td>{{this.personal}}</td>
-                <td>{{this.area}}</td>
-                <td>{{this.name}}</td>
-                {{!-- <td class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> Asignado</td> --}}
+                <td><a href="/edit/{{_id}}">{{_id}}</a></td>
+                <td>{{type}}</td>
+                <td>{{description}}</td>
+                <td>{{createdAt}}</td>
+                <td class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> {{status}}</td>
+                <td>{{personal}}</td>
+                <td>{{area}}</td>
+                <td>{{name}}</td>
             </tr>
             {{/each}}
         </tbody>

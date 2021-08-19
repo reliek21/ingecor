@@ -9,10 +9,10 @@ const TicketSchema = new Schema({
         type: String,
         require: true
     },
-    state: {
+    status: {
         type: String,
-        require: false,
-        default: 'Asignado'
+        default: 'Asignado',
+        require: true
     },
     personal: {
         type: String,

@@ -8,13 +8,13 @@ indexCtrl.renderIndex = (req, res) => {
 
 indexCtrl.renderLogin = (req, res) => {
     res.render('users/login', {
-        title: 'Inicio Sesion'
+        title: 'Inicio sesion'
     });
 };
 
 indexCtrl.renderLoginAdmin = (req, res) => {
     res.render('users/login2', {
-        title: 'Inicio Sesion'
+        title: 'Inicio sesion'
     });
 };
 
@@ -26,17 +26,17 @@ indexCtrl.renderRegistro = (req, res) => {
 
 indexCtrl.renderUsuario = (req, res) => {
     res.render('users/usuario', {
-        title: 'Home Usuarios'
+        title: 'Home usuarios'
     });
 };
 
 indexCtrl.renderAdmin = (req, res) => {
     res.render('users/admin', {
-        title: 'Home Admin',
+        title: 'Home admin',
     });
 };
 
-// TODO: solucionar el error de compatibilidad en error
+// TODO: solucionar el error de compatibilidad de la pagina 404
 // indexCtrl.renderError = (req, res) => {
 //     res.render('/error', {
 //         title: 'Error 404'
