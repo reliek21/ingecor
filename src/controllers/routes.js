@@ -1,3 +1,5 @@
+const ticket = require("../models/ticket");
+
 const indexCtrl = {};
 
 indexCtrl.renderIndex = (req, res) => {
@@ -24,23 +26,20 @@ indexCtrl.renderRegistro = (req, res) => {
     });
 };
 
-indexCtrl.renderUsuario = (req, res) => {
+indexCtrl.renderUsuario = async (req, res) => {
+    const tickets = await ticket.find().lean();
     res.render('users/usuario', {
-        title: 'Home usuarios'
+        title: 'Home usuarios',
+        tickets
     });
 };
 
-indexCtrl.renderAdmin = (req, res) => {
+indexCtrl.renderAdmin = async (req, res) => {
+    const tickets = await ticket.find().lean();
     res.render('users/admin', {
         title: 'Home admin',
+        tickets
     });
 };
-
-// TODO: solucionar el error de compatibilidad de la pagina 404
-// indexCtrl.renderError = (req, res) => {
-//     res.render('/error', {
-//         title: 'Error 404'
-//     });
-// };
 
 module.exports = indexCtrl;

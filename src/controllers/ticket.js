@@ -26,7 +26,7 @@ ticketCtrl.createNewTicket = async (req, res) => {
         date: date
     });
     await newTicket.save();
-    res.redirect('/tickets');
+    res.redirect('/usuario');
 };
 
 ticketCtrl.renderTickets = async (req, res) => {
