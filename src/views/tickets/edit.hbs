@@ -1,0 +1,58 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Asignación</h3>
+            <p class="text-success"><strong>Nombre</strong>: {{ticket.name}}</p>
+            <p class="text-success"><strong>#</strong>{{ticket._id}}</p>
+        </div>
+        <div class="card-body">
+            <form action="/edit/{{ticket._id}}?_method=PUT" method="post">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example" name="type">
+                            <option hidden>{{ticket.type}}</option>
+                            <option value="Insidencia">Insidencia</option>
+                            <option value="Solicitud">Solicitud</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <textarea name="description" class="form-control" readonly>{{ticket.description}}</textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example" name="status">
+                            <option hidden>{{ticket.status}}</option>
+                            <option value="Asignado">Asignado</option>
+                            <option value="En proceso">En proceso</option>
+                            <option value="Resuelto">Resuelto</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example" name="area">
+                            <option value="{{ticket.area}}">{{ticket.area}}</option>
+                            <option value="Educativo">Educativo</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Contable">Contable</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Libre">Libre</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="name" value="{{ticket.name}}" class="form-control" readonly>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block" type="submit">
+                            Asignar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

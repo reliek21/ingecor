@@ -1,0 +1,51 @@
+// custom styles
+.form-floating {
+    .btn-r-l {
+        a {
+            color: $accent-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: $primary-color;
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+.box-centered {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.btn-empleado {
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        background-color: $alternative-color;
+        &:hover {
+            background-color: rgb(173, 101, 29);
+        }
+    }
+}
+
+.btn-usuario a {
+    background-color: $primary-color;
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+.btn-empleado-login {
+    background-color: $alternative-color;
+}
