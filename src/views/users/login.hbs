@@ -1,14 +1,9 @@
 <body class="text-center">
-    <div class="box-centered">
-        <div class="btn-empleado">
-            <a href="/loginadmin">Empleados</a>
-        </div>
-    </div>
 
     <main class="form-signin">
 
-    {{>errors}}
-    {{>message}}
+        {{>errors}}
+        {{>message}}
         <form action="/login" method="POST">
             <img class="mb-4" src="assets/logo/favicon.png" alt="" width="100" height="100">
             <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>

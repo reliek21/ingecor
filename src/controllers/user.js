@@ -16,16 +16,6 @@ userCtrl.login = passport.authenticate('local', {
     failureFlash: true
 });
 
-userCtrl.renderLoginAdmin = (req, res) => {
-    res.render('users/login2', {
-        title: 'Inicio Admin',
-    });
-};
-
-userCtrl.loginAdmin = (req, res) => {
-    res.send('LoginAdmin');
-};
-
 userCtrl.renderRegistro = (req, res) => {
     res.render('users/signup', {
         title: 'Registro'

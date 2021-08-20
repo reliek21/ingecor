@@ -8,7 +8,7 @@ const session = require('express-session');
 const passport = require('passport');
 
 require('dotenv').config();
- 
+
 
 // initializations
 const app = express();
