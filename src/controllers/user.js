@@ -79,7 +79,7 @@ userCtrl.registro = async (req, res) => {
 userCtrl.logout = (req, res) => {
     req.logout();
     req.flash('success_msg', 'Cerraste sesión');
-    res.redirect('/login');
+    res.redirect('users/login');
 };
 
 
