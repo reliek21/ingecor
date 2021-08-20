@@ -27,7 +27,7 @@ const TicketSchema = new Schema({
         require: true
     }
 
-},{
+}, {
     timestamps: true
 });
 
