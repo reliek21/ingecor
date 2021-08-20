@@ -1,7 +1,6 @@
 const ticketCtrl = {};
 
 const Ticket = require('../models/ticket');
-require('../config/passport')
 
 ticketCtrl.renderTicket = (req, res) => {
     console.log(req.user);
