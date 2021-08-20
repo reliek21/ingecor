@@ -22,10 +22,9 @@ const TicketSchema = new Schema({
         type: String,
         require: false
     },
-    date: {
-        type: Date,
-        require: true,
-    }
+
+},{
+    timestamps: true
 });
 
 

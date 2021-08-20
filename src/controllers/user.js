@@ -1,4 +1,7 @@
 const userCtrl = {};
+
+const passport = require('passport');
+
 const User = require('../models/user');
 
 userCtrl.renderLogin = (req, res) => {
@@ -7,13 +10,15 @@ userCtrl.renderLogin = (req, res) => {
     });
 };
 
-userCtrl.login = (req, res) => {
-    res.send('Inicio sesion');
-};
+userCtrl.login = passport.authenticate('local', {
+    failureRedirect: '/login',
+    successRedirect: '/usuario',
+    failureFlash: true
+});
 
 userCtrl.renderLoginAdmin = (req, res) => {
     res.render('users/login2', {
-        title: 'Inicio Admin'
+        title: 'Inicio Admin',
     });
 };
 
@@ -72,7 +77,9 @@ userCtrl.registro = async (req, res) => {
 };
 
 userCtrl.logout = (req, res) => {
-    res.send('logut');
+    req.logout();
+    req.flash('success_msg', 'Cerraste sesión');
+    res.redirect('/login');
 };
 
 

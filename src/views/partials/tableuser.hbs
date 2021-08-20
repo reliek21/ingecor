@@ -7,14 +7,14 @@
             <tr class="table-dark">
                 <th scope="col" class="text-center"><i class="bi bi-asterisk text-warning text-warning"
                         style="font-size: 1rem; margin-right: .2rem;"></i>Id</th>
-                <th scope="col" class="text-center"><i class="bi bi-signpost text-warning"
-                        style="font-size: 1rem; margin-right: .2rem;"></i> Nombre del Software</th>
                 <th scope="col" class="text-center"><i class="bi bi-bug text-warning"
                         style="font-size: 1rem; margin-right: .2rem;"></i> Tipo de ticket</th>
+                <th scope="col" class="text-center"><i class="bi bi-signpost text-warning"
+                        style="font-size: 1rem; margin-right: .2rem;"></i> Nombre del Software</th>
                 <th scope="col" class="text-center"><i class="bi bi-card-text text-warning"
                         style="font-size: 1rem; margin-right: .2rem;"></i> Descripción</th>
-                {{!-- <th scope="col" class="text-center"><i class="bi bi-calendar-week"></i> Fecha de creación</th>
-                --}}
+                <th scope="col" class="text-center"><i class="bi bi-calendar-week text-warning"></i> Fecha de creación
+                </th>
                 <th scope="col" class="text-center"><i class="bi bi-wrench text-warning"
                         style="font-size: 1rem; margin-right: .2rem;"></i> Tipo de Software</th>
                 <th scope="col" class="text-center"><i class="bi bi-archive text-warning"
@@ -26,10 +26,10 @@
             {{#each tickets}}
             <tr>
                 <td class="text-center align-middle">{{_id}}</td>
-                <td class="text-center align-middle">{{name}}</td>
                 <td class="text-center align-middle">{{type}}</td>
+                <td class="text-center align-middle">{{name}}</td>
                 <td class="text-center align-middle">{{description}}</td>
-                {{!-- <td class="text-center align-middle">{{date}}</td> --}}
+                <td class="text-center align-middle">{{createdAt}}</td>
                 <td class="text-center align-middle">{{area}}</td>
                 <td class="text-center align-middle">{{status}}</td>
             </tr>

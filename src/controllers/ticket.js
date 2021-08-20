@@ -15,15 +15,13 @@ ticketCtrl.createNewTicket = async (req, res) => {
         status,
         area,
         name,
-        date
-    } = req.body;
+        datedatedatedatedatedatedatedate} = req.body;
     const newTicket = new Ticket({
         type: type,
         description: description,
         status: status,
         area: area,
         name: name,
-        date: date
     });
     await newTicket.save();
     req.flash('success_msg', 'Ticket agregado con exito!');
@@ -53,7 +51,6 @@ ticketCtrl.renderUpdateTicket = async (req, res) => {
         status,
         area,
         name,
-        date
     } = req.body;
     await Ticket.findByIdAndUpdate(req.params.id, {
         type: type,
@@ -61,7 +58,6 @@ ticketCtrl.renderUpdateTicket = async (req, res) => {
         status: status,
         area: area,
         name: name,
-        date: date
     });
     req.flash('success_msg', 'Ticket editado con exito!');
     res.redirect('/admin');
