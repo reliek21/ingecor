@@ -1,21 +1,6 @@
-
-<div style="">
-    <img src="public/assets/logo/logo.png" style="zoom: 80%;" alt="Logo"/>
-</div>
-
-    
 # Ingecor Services
 
 Plataforma web que tiene como objetivo ofrecer soporte a los sistemas de informacion creados por **Ingecor Services**.
-
-
-## Demo
-
-[Link demo](https://www.github.com/octokatherine)
-
-## Capturas de pantalla
-
-![App Screenshot](public/assets/screen/screenshot.png)
 
 
 ## Referencia de colores
@@ -52,13 +37,13 @@ Plataforma web que tiene como objetivo ofrecer soporte a los sistemas de informa
 Clonar el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone git@github.com:reliek21/ingecor.git
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd ingecor
 ```
 
 Instalar las dependencias
