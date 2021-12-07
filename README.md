@@ -3,16 +3,6 @@
 Plataforma web que tiene como objetivo ofrecer soporte a los sistemas de informacion creados por **Ingecor Services**.
 
 
-## Referencia de colores
-
-| Color             | Hex                                                                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------ |
-| Color primario    | ![#EB2227](https://via.placeholder.com/10/0a192f?text=+) #EB2227                                 |
-| Color Secundario  | ![#FBF4F7](https://via.placeholder.com/10/f8f8f8?text=+) #FBF4F7                                 |
-| Accent Color      | ![rgba(235, 34, 37, 0.70)](https://via.placeholder.com/10/00b48a?text=+) rgba(235, 34, 37, 0.70) |
-| Color alternativo | ![#F68B1F](https://via.placeholder.com/10/00b48a?text=+) #F68B1F                                 |
-
-
 ## Carcteristicas
 
 - UX & UI
